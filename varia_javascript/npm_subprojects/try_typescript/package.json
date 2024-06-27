@@ -1,5 +1,5 @@
 {
-  "name": "try_json_schema_library",
+  "name": "try_typescript",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,5 @@
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
-  "description": "",
-  "dependencies": {
-    "json-schema-library": "^9.3.5"
-  },
-  "devDependencies": {
-    "typescript": "^5.5.2"
-  }
+  "description": ""
 }
