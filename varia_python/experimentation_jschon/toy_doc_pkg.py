@@ -3,7 +3,7 @@ from jschon import create_catalog, JSON, JSONSchema
 
 create_catalog('2020-12')
 
-demo_schema = JSONSchema({
+demo_case_schema = JSONSchema({
     "$id": "https://vidistrictattorney.com/docpkg_case",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Case",
@@ -30,7 +30,7 @@ demo_schema = JSONSchema({
     "required": [ "CaseId", "ChargingAttorney", "ChargeReviewMessage" ]
 })
 
-demo_schema = JSONSchema({
+demo_report_schema = JSONSchema({
     "$id": "https://vidistrictattorney.com/docpkg_report",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Report",
