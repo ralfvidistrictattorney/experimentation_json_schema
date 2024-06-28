@@ -41,10 +41,9 @@ demo_schema = JSONSchema({
                 "Description": "Identifier of case to which this report belongs",
                 "type": "string"
             },
-            "ReportNumber" : {
-                "Description": "Sequence number identifying report within case",
-                "type": "number",
-                "exclusiveMinimum": 0
+            "ReportInternalId" : {
+                "Description": "Identifer for report within case",
+                "type": "String"
             },
             "OriginalReportS3URL" : {
                 "Description": "S3 URL locating original uploaded report",
@@ -64,5 +63,5 @@ demo_schema = JSONSchema({
             },
 
     },
-    "required": ["CaseID","ReportNumber","OriginalReportS3URL"]
+    "required": ["CaseID","ReportInternalId","OriginalReportS3URL"]
 })
