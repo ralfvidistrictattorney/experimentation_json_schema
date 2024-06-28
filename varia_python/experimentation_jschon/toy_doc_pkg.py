@@ -11,19 +11,19 @@ demo_case_schema = JSONSchema({
     "type": "object",
     "properties": {
             "CaseId": {
-                "description": "",
+                "description": "Globally unique internal ID (surrogate key) for case",
                 "type": "string"
             },
             "DueDate": {
-                "description": "",
+                "description": "due date as posted by clerk",
                 "type": "string"
             },
             "ChargingAttorney": {
-                "description": "",
+                "description": "name of charging attorney",
                 "type": "string"
             },
             "ChargeReviewMessage": {
-                "description": "",
+                "description": "clerk's message to charging attorney re case",
                 "type": "string"
             },
     },
@@ -42,7 +42,7 @@ demo_report_schema = JSONSchema({
                 "type": "string"
             },
             "ReportInternalId" : {
-                "Description": "Identifer for report within case",
+                "Description": "Identifer for report within case, recommend it be globally unique",
                 "type": "String"
             },
             "OriginalReportS3URL" : {
@@ -61,7 +61,6 @@ demo_report_schema = JSONSchema({
                 "Description": "List mapping redacted names to labels (once generated, optional)",
                 "type": "string"
             },
-
     },
     "required": ["CaseID","ReportInternalId","OriginalReportS3URL"]
 })
